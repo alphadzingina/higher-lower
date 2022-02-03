@@ -1,4 +1,4 @@
-from art import logo
+from art import logo, vs
 from game_data import data
 import random
 
@@ -17,4 +17,5 @@ def format_data(account):
     return f"{account_name}, a {account_descr} from {account_country}"
 
 print(f"Compare A: {format_data(account_a)}")
-print(f"Compare B: {format_data(account_b)}")
+print(vs)
+print(f"Against B: {format_data(account_b)}")
