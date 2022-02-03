@@ -19,3 +19,5 @@ def format_data(account):
 print(f"Compare A: {format_data(account_a)}")
 print(vs)
 print(f"Against B: {format_data(account_b)}")
+
+guess = input("Who has more followers? Type 'A' or 'B': ").lower()
