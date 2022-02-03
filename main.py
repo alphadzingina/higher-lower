@@ -3,6 +3,7 @@ from game_data import data
 import random
 
 print(logo)
+score = 0
 
 account_a = random.choice(data)
 account_b = random.choice(data)
@@ -32,3 +33,9 @@ def check_answer(guess, a_followers, b_followers):
 a_follower_count = account_a["follower_count"]
 b_follower_count = account_b["follower_count"]
 is_correct = check_answer(guess, a_follower_count, b_follower_count)
+
+if is_correct:
+    score = score = 1
+    print(f"You're right! Current score is {score}.")
+else: 
+    print(f"Sorry that's wrong. Final score: {score}.")
