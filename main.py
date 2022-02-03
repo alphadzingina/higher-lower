@@ -42,9 +42,9 @@ while game_should_continue:
 
     os.system('cls||clear')
     print(logo)
-    
+
     if is_correct:
-        score = score = 1
+        score = score + 1
         print(f"You're right! Current score is {score}.")
     else: 
         game_should_continue = False
