@@ -1,6 +1,7 @@
 from art import logo, vs
 from game_data import data
 import random
+import os
 
 print(logo)
 
@@ -38,6 +39,8 @@ while game_should_continue:
     a_follower_count = account_a["follower_count"]
     b_follower_count = account_b["follower_count"]
     is_correct = check_answer(guess, a_follower_count, b_follower_count)
+
+    os.system('cls||clear')
 
     if is_correct:
         score = score = 1
